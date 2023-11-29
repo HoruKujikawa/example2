@@ -1,2 +1,2 @@
 # example2
-mi second repository
+my second repository
