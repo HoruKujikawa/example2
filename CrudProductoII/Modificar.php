@@ -1,6 +1,6 @@
 <?php
 
-include 'conexion.php';
+include ("conexion.php");
 
 
 
@@ -15,8 +15,15 @@ $estado = $_POST["estado"];
 $categorias = $_POST["categorias"];
 
 
+//$modificar = "UPDATE producto SET talla = '$talla', color = '$color', cantidad = '$cantidad', descripcion = '$descripcion', nombre = '$nombre', marca = '$marca', estado = '$estado', categorias = '$categorias' WHERE id_producto = '$id_producto'";
 $modificar = "UPDATE producto SET talla = '$talla', color = '$color', cantidad = '$cantidad', descripcion = '$descripcion', nombre = '$nombre', marca = '$marca', estado = '$estado', categorias = '$categorias' WHERE id_producto = '$id_producto'";
-mysqli_query($conexion, $modificar);
+$resultado = mysqli_query($conectar, $modificar);
+if ($resultado === TRUE){
+    header("location: index.php");
+}else{
+ echo "Datos NO insertados";
+}
+
 
 ?>
 

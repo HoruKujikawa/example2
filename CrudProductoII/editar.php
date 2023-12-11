@@ -16,36 +16,40 @@
 
 <form class="container" action="Modificar.php" method="POST">
 <div class="mb-3">
+  <label class="form-label">ID</label>
+  <input type="text" class="form-control" name="talla" value="<?php echo $id_producto;?>" disabled>
+</div>
+<div class="mb-3">
   <label class="form-label">Talla</label>
-  <input type="text" class="form-control" name="talla" value="<?php echo $talla; ?>">
+  <input type="text" class="form-control" name="talla" value="">
 </div>
 <div class="mb-3">
   <label class="form-label">Color</label>
-  <input type="text" class="form-control" name="color" value="<?php echo $color; ?>">
+  <input type="text" class="form-control" name="color" value="">
 </div>
 <div class="mb-3">
   <label class="form-label">Cantidad</label>
-  <input type="number" class="form-control" name="cantidad" value="<?php echo $cantidad; ?>">
+  <input type="number" class="form-control" name="cantidad" value="">
 </div>
 <div class="mb-3">
   <label class="form-label">Descripcion</label>
-  <input type="text" class="form-control" name="descripcion" value="<?php echo $descripcion; ?>">
+  <input type="text" class="form-control" name="descripcion" value="">
 </div>
 <div class="mb-3">
   <label class="form-label">Nombre</label>
-  <input type="text" class="form-control" name="nombre" value="<?php echo $nombre; ?>">
+  <input type="text" class="form-control" name="nombre" value="">
 </div>
 <div class="mb-3">
   <label class="form-label">Marca</label>
-  <input type="text" class="form-control" name="marca" value="<?php echo $marca; ?>">
+  <input type="text" class="form-control" name="marca" value="">
 </div>
 <div class="mb-3">
   <label class="form-label">Estado</label>
-  <input type="text" class="form-control" name="estado" value="<?php echo $estado; ?>">
+  <input type="text" class="form-control" name="estado" value="">
 </div>
 <div class="mb-3">
   <label class="form-label">Categorias</label>
-  <input type="text" class="form-control" name="categorias" value="<?php echo $categorias; ?>">
+  <input type="text" class="form-control" name="categorias" value="">
 </div>
 <div class= "text-center">
   <button type="submit" class="btn btn-danger">Guardar</button>

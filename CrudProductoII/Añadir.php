@@ -20,5 +20,4 @@ if ($resultado === TRUE){
  echo "Datos NO insertados";
 }
 
-var_dump($_POST);
 ?>
